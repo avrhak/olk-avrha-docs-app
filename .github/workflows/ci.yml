@@ -31,6 +31,7 @@ jobs:
           pip install mkdocs-drawio
           pip install mkdocs-glightbox
           pip install mkdocs-excalidraw
+          pip install mkdocs-swagger-ui-tag
       - run: mkdocs gh-deploy --config-file ./mkdocs.yml --force
  
   deploy_mkdocs:

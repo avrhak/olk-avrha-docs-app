@@ -41,6 +41,7 @@ plugins:
       darkmode: true
   - glightbox
   - excalidraw
+  - swagger-ui-tag
 
 markdown_extensions:
   - pymdownx.highlight:

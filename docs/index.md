@@ -71,3 +71,7 @@ graph LR
 
 # excalidraw
 ![Diagrama de prueba](test-mkdocs.excalidraw)
+
+# Documentación de mi API
+
+<swagger-ui src="api/openapi.yaml"></swagger-ui>
