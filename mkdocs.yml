@@ -1,0 +1,91 @@
+site_name: Avrha Security Playbook
+theme:
+  name: material
+  custom_dir: docs/overrides
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - navigation.instant
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+      primary: indigo
+      accent: light green 
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode    
+      primary: indigo
+      accent: red
+
+plugins:
+  - search
+  - neoteroi.mkdocsoad:
+      use_pymdownx: true
+  - drawio:
+      viewer_js: "https://viewer.diagrams.net/js/viewer-static.min.js"
+      toolbar: true
+      tooltips: true
+      edit: true
+      border: 10
+      darkmode: true
+  - glightbox
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - neoteroi.cards
+  - neoteroi.timeline
+  - neoteroi.projects
+  - neoteroi.spantable
+  - def_list
+  - tables
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra_templates:
+  - footer.html
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/css-v1.1.2.css
+
+extra_javascript:
+  - https://viewer.diagrams.net/js/viewer-static.min.js
+  - javascripts/drawio-reload.js

@@ -1,0 +1,42 @@
+.custom-footer {
+    background: black;
+    color: #666;
+    padding: 20px 0;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-right {
+    display: flex;
+    gap: 15px;
+}
+
+.brand-name {
+    font-weight: 700;
+    color: #ffffff; /* Más claro que el resto del texto */
+}
+
+.social-icon {
+    text-decoration: none;
+    color: #666;
+    font-size: 18px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-icon:hover {
+    color: white;
+    transform: scale(1.2);
+}
