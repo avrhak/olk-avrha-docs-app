@@ -211,6 +211,7 @@
     }
   ],
   "appState": {
+    "theme": "light",
     "gridSize": 20,
     "gridStep": 5,
     "gridModeEnabled": false,
