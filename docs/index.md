@@ -68,3 +68,6 @@ graph LR
 
 
 ![my-custom-page-name](object.drawio)
+
+# excalidraw
+![Diagrama de prueba](test-mkdocs.excalidraw)

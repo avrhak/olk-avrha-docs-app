@@ -40,6 +40,7 @@ plugins:
       border: 10
       darkmode: true
   - glightbox
+  - excalidraw
 
 markdown_extensions:
   - pymdownx.highlight:

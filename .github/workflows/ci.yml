@@ -30,6 +30,7 @@ jobs:
           pip install pymdown-extensions
           pip install mkdocs-drawio
           pip install mkdocs-glightbox
+          pip install mkdocs-excalidraw
       - run: mkdocs gh-deploy --config-file ./mkdocs.yml --force
  
   deploy_mkdocs:
