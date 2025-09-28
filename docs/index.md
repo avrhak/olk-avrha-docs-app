@@ -74,4 +74,4 @@ graph LR
 
 # Documentación de mi API
 
-<swagger-ui src="api/openapi.yaml"></swagger-ui>
+<swagger-ui src="openapi.yaml"></swagger-ui>
