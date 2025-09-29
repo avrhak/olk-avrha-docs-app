@@ -44,4 +44,20 @@
 .md-typeset img[src$=".excalidraw"],
 .md-typeset svg.excalidraw-svg {
   background: #ffffff !important;
+  filter: none !important;
+}
+
+/* Forzar tema claro para diagramas Excalidraw */
+.md-typeset .excalidraw-wrapper,
+.md-typeset .excalidraw-container {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* Asegurar que los elementos del diagrama sean visibles en tema claro */
+[data-md-color-scheme="slate"] .md-typeset img[src$=".excalidraw"],
+[data-md-color-scheme="slate"] .md-typeset svg.excalidraw-svg {
+  background: #ffffff !important;
+  filter: none !important;
+  border: 1px solid #e0e0e0;
 }
