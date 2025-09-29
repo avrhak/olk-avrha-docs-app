@@ -40,7 +40,8 @@ plugins:
       border: 10
       darkmode: false
   - glightbox
-  - excalidraw
+  - excalidraw:
+      theme: light
   - swagger-ui-tag
 
 markdown_extensions:

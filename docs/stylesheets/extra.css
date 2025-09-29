@@ -40,3 +40,22 @@
     color: white;
     transform: scale(1.2);
 }
+
+/* Forzar fondo blanco para diagramas Excalidraw */
+.excalidraw-wrapper,
+.excalidraw-container,
+.excalidraw svg,
+.excalidraw canvas {
+    background-color: #ffffff !important;
+    background: #ffffff !important;
+}
+
+/* Asegurar que los elementos de Excalidraw tengan colores correctos */
+.excalidraw svg * {
+    stroke: #000000 !important;
+    fill: none !important;
+}
+
+.excalidraw svg text {
+    fill: #000000 !important;
+}
