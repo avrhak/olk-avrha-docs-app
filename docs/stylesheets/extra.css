@@ -40,3 +40,8 @@
     color: white;
     transform: scale(1.2);
 }
+
+.md-typeset img[src$=".excalidraw"],
+.md-typeset svg.excalidraw-svg {
+  background: #ffffff !important;
+}
