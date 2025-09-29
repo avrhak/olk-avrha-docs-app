@@ -1,4 +1,4 @@
-site_name: Hidku Security Playbook
+site_name: Avrha Security Playbook
 theme:
   name: material
   custom_dir: docs/overrides
@@ -41,9 +41,6 @@ plugins:
       darkmode: false
   - glightbox
   - excalidraw:
-      theme: light
-      darkmode: false
-      export_background: true
   - swagger-ui-tag
 
 markdown_extensions:
