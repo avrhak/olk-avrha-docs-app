@@ -216,6 +216,8 @@
     "gridStep": 5,
     "gridModeEnabled": false,
     "viewBackgroundColor": "#ffffff",
+    "exportBackground": true,
+    "exportWithDarkMode": false,
     "lockedMultiSelections": {}
   },
   "files": {}
