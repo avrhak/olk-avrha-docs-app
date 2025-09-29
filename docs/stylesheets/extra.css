@@ -41,21 +41,46 @@
     transform: scale(1.2);
 }
 
-/* Forzar fondo blanco para diagramas Excalidraw */
-.excalidraw-wrapper,
-.excalidraw-container,
-.excalidraw svg,
-.excalidraw canvas {
+/* Forzar fondo blanco para diagramas Excalidraw - Selectores más específicos */
+.md-content .excalidraw-wrapper,
+.md-content .excalidraw-container,
+.md-content .excalidraw,
+.md-content .excalidraw svg,
+.md-content .excalidraw canvas,
+.md-content img[src$=".excalidraw"],
+.md-content p img[src$=".excalidraw"] {
     background-color: #ffffff !important;
     background: #ffffff !important;
+    filter: none !important;
+}
+
+/* Forzar tema claro en modo oscuro */
+[data-md-color-scheme="slate"] .excalidraw-wrapper,
+[data-md-color-scheme="slate"] .excalidraw-container,
+[data-md-color-scheme="slate"] .excalidraw,
+[data-md-color-scheme="slate"] .excalidraw svg,
+[data-md-color-scheme="slate"] .excalidraw canvas,
+[data-md-color-scheme="slate"] img[src$=".excalidraw"] {
+    background-color: #ffffff !important;
+    background: #ffffff !important;
+    filter: none !important;
 }
 
 /* Asegurar que los elementos de Excalidraw tengan colores correctos */
-.excalidraw svg * {
+.md-content .excalidraw svg *,
+[data-md-color-scheme="slate"] .excalidraw svg * {
     stroke: #000000 !important;
     fill: none !important;
 }
 
-.excalidraw svg text {
+.md-content .excalidraw svg text,
+[data-md-color-scheme="slate"] .excalidraw svg text {
     fill: #000000 !important;
+}
+
+/* Prevenir inversión de colores en modo oscuro */
+[data-md-color-scheme="slate"] .excalidraw,
+[data-md-color-scheme="slate"] img[src$=".excalidraw"] {
+    filter: none !important;
+    -webkit-filter: none !important;
 }

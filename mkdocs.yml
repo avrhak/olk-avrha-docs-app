@@ -42,6 +42,8 @@ plugins:
   - glightbox
   - excalidraw:
       theme: light
+      darkmode: false
+      export_background: true
   - swagger-ui-tag
 
 markdown_extensions:
@@ -92,3 +94,4 @@ extra_css:
 extra_javascript:
   - https://viewer.diagrams.net/js/viewer-static.min.js
   - javascripts/drawio-reload.js
+  - javascripts/excalidraw-fix.js
