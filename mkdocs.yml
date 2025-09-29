@@ -38,7 +38,8 @@ plugins:
       tooltips: true
       edit: true
       border: 10
-      darkmode: true
+      darkmode: false
+  - mkdocs-excalidraw
   - glightbox
 
 markdown_extensions:
